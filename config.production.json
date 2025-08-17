@@ -1,8 +1,13 @@
 {
   "gitService": "github",
-  "token": "env:GITHUB_TOKEN",
+
+  "githubToken": "env:GITHUB_TOKEN",
+  "token": "env:TOKEN",
+  "oauthToken": "env:OAUTH_TOKEN",
+
   "rsaPrivateKey": "env:RSA_PRIVATE_KEY",
   "port": "env:PORT",
+
   "email": false,
   "moderation": true,
   "notifications": { "enabled": false }
