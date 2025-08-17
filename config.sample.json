@@ -1,6 +1,7 @@
+
 {
-  "gitlabToken": "YOUR_GITLAB_TOKEN",
-  "githubToken": "YOUR_GITHUB_TOKEN",
-  "rsaPrivateKey": "-----BEGIN RSA PRIVATE KEY-----YOUR_KEY-----END RSA PRIVATE KEY-----",
-  "port": 80
+  "port": 10000,
+  "gitService": "github",
+  "token": "env:GITHUB_TOKEN",
+  "rsaPrivateKey": "env:RSA_PRIVATE_KEY"
 }
