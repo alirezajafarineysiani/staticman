@@ -1,18 +1,9 @@
 {
-  "port": 10000,
   "gitService": "github",
-
-  // GitHub authentication
   "token": "env:GITHUB_TOKEN",
-
-  // RSA private key for encrypting fields (must be in Render env vars)
   "rsaPrivateKey": "env:RSA_PRIVATE_KEY",
-
-  // General defaults
+  "port": "env:PORT",
   "email": false,
   "moderation": true,
-  "notifications": {
-    "enabled": false
-  }
+  "notifications": { "enabled": false }
 }
-
