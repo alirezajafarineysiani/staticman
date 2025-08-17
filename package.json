@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prestart": "if [ ! -d node_modules ]; then npm install; fi",
-    "start": "node index.js",
+    "start": "bash -lc 'if [ -n \"$RSA_PRIVATE_KEY_B64\" ]; then export RSA_PRIVATE_KEY=\"$(echo \"$RSA_PRIVATE_KEY_B64\" | base64 -d)\"; fi; node index.js'",
     "test": "standard && jest",
     "test-dev": "TEST_DEV=true jest --watch",
     "debug": "nodemon --inspect index.js"
